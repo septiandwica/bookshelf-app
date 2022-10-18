@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background: #b1befa;
+  height: 65vh;
+}
+.top-title h1 {
+  font-size: 55px;
+  color: #1D1CE5;
+}
+.top-title h1 span {
+  color: white;
+}
+.top-title p {
+  padding-bottom: 25px;
+}
+.top-ilust img {
+    width: 480px;
+    padding: 60px 20px;
+}
+.form-buku {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form-group {
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+.form-group input {
+    border: 1px solid #1D1CE5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 104.5%;
+    font-size: 12px;
+}
+.form-checkbox {
+    gap: 5px;
+}
+.form-check input,
+.form-check label {
+    cursor: pointer;
+}
+.submit-btn {
+    border: none;
+    background-color: #1D1CE5;
+    color: #EEF1FF;
+    padding: 5px 0px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.submit-btn:hover {
+    background-color: #3b3bfa;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.profile-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    height: 280px;
+    margin-top: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px #b4c1fb;
+    cursor: default;
+}
+.profile-user h2{
+    font-size: 25px;
+}
+.profile-img img {
+    width: 90px;
+    padding-top: 20px;
+}
+.koleksi-card {
+    width: 300px;
+    height: 120px;
+    margin-top: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px #b4c1fb;
+    cursor: default;
+}
+.koleksi-card h2 {
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.profile-user ul li,
+.profile-user ul h4 {
+    list-style: none;
+    margin-top: 8px;
+}
+ul .profile-kontak a{
+    color: #30313a;
+    text-decoration: none;
+}
+ul .profile-kontak .sosmed-footer img{
+    width: 25px;
+}
+
+.form-group2 {
+    margin-left: 20px;
+}
+.form-group2 input {
+    border: 1px solid #1D1CE5;
+    padding: 5px 15px;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.koleksi-buku {
+    display: flex;
+    justify-content: space-between;
+}
+.left,
+.right {
+    text-align: center;
+    padding-top: 15px;
+    width: 400px;
+    height: 60px;
+    margin: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px #b4c1fb;
+    cursor: default;
+}
+.buku {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    background: white;
+    border-radius: 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 4px #b4c1fb;
+    cursor: default;
+}
+.buku-judul {
+    color: black;
+    margin: 10px;
+    font-size: 16px;
+}
+.buku-judul span {
+    color: #1D1CE5;
+}
+.buku-penulis {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.buku-status {
+    display: flex;
+    gap: 5px;
+}
+.cari-btn,
+.hapus-btn,
+.kembalikan-btn,
+.selesai-btn {
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-right: 20px;
+    margin-bottom: 27px;
+}
+.cari-btn {
+    background-color: #1D1CE5;
+    margin-left: 20px;
+}
+.cari-btn:hover {
+  background-color: #4444f6;
+}
+.hapus-btn {
+    background-color: rgb(186, 0, 0);
+}
+.hapus-btn:hover {
+    background-color: red;
+}
+.selesai-btn {
+    background-color: rgb(38, 198, 38);
+}
+.selesai-btn:hover {
+    background-color: rgb(39, 214, 39);
+}
+.kembalikan-btn {
+    background-color: #1D1CE5;
+}
+.kembalikan-btn:hover {
+    background-color: #5a5afd;
+}
+.hidden {
+    display: none;
+}
+
+
+@media screen and (max-width: 1160px) {
+    .top-bar {
+        flex-direction: column-reverse;
+        height: 100vh;
+        align-items: center;
+    }
+    .top-bar h1{
+        text-align: center;
+    }
+    .top-ilust img{
+        width: 350px;
+        padding: 0;
+    }
+    .profile-card {
+        width: 572px;
+    }
+    .profile-img img {
+        width: 90px;
+        padding-top: 20px;
+    }
+    .koleksi-card {
+        width: 572px;
+    }
+    .left,
+    .right {
+        text-align: center;
+        padding-top: 15px;
+        width: 274px;
+        height: 60px;
+        margin: 15px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px #b4c1fb;
+        cursor: default;
+    }
+    .cari-btn,
+    .hapus-btn,
+    .kembalikan-btn,
+    .selesai-btn {
+        padding: 5px 8px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        margin-right: 5px;
+        margin-bottom: 17px;
+    }
+    
+}
+@media screen and (max-width: 640px) {
+    .top-ilust img{
+        width: 290px;
+        padding: 0;
+    }
+    .profile-card {
+        width: 372px;
+    }
+    .profile-user h2{
+        font-size: 18px;
+    }
+    .profile-img img {
+        width: 90px;
+        padding-top: 20px;
+    }
+    .koleksi-card {
+        width: 372px;
+    }
+    .koleksi-card h2{
+        font-size: 18px;
+    }
+    .left,
+    .right {
+        width: 178px;
+    } 
+}

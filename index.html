@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+            rel="stylesheet">
+        <link
+            href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'
+            rel='stylesheet'>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <title>Bookshelf App</title>
+    </head>
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="top-title">
+                    <h1>Book<span class="color-white">Shelf</span></h1>
+                    <p>Hobi baca buku? Kelola koleksi bukumu dengan BookShelf!!</p>
+                    <div class="top-form">
+                        <form class="form-buku" id="TambahBuku" action="" method="post">
+                            <div class="form-group">
+                                <label for="judul">Judul</label>
+                                <input type="text" name="judul" id="judul" placeholder="ex. Kimi No Nawa" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="penulis">Penulis</label>
+                                <input
+                                    type="text"
+                                    name="penulis"
+                                    id="penulis"
+                                    placeholder="ex. Makoto Shinkai"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tahun">Tahun Terbit</label>
+                                <input
+                                    type="number"
+                                    name="tahun"
+                                    id="tahun"
+                                    min="1800"
+                                    max="2045"
+                                    placeholder="ex. 2016"
+                                    required>
+                            </div>
+                            <div class="form-checkbox">
+                                <input type="checkbox" name="isComplete" id="isComplete" placeholder="">
+                                <label for="isComplete">Sudah selesai dibaca</label>
+                            </div>
+                            <button type="submit" class="submit-btn">Tambah Buku</button>
+                        </form>             
+                    </div>
+                </div>
+                <div class="top-ilust">
+                    <img src="assets/img/top-ilust.svg" alt="top-ilust">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="profile">
+                <div class="profile-card">
+                    <div class="profile-user">
+                        <div class="profile-img">
+                            <img src="assets/img/profile.svg" alt="profile"/>
+                        </div>
+                        <h2>Septian Dwi Cahyo</h2>
+                        <p>Web Developer</p>
+                        <ul>
+                            <h4>Kontak</h4>
+                            <li class="profile-kontak">
+                                <a class="sosmed-footer" href="https://www.linkedin.com/in/septian-dwi-ch"target="_blank"><img src="assets/img/linkedin.png" alt="linkedin" ></a>
+                                <a class="sosmed-footer" href= "https://www.instagram.com/septian.dwica/" target="_blank"><img src="assets/img/instagram.png" alt="instagram" ></a>
+                                <a class="sosmed-footer" href="https://www.dicoding.com/users/septiandwic" target="_blank"><img src="assets/img/dicoding.png" alt="dicoding"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="koleksi-card">
+                    <h2>Temukan Buku</h2>
+                    <form id="TemukanBuku" action="" method="post">
+                        <div class="form-group2">
+                            <input type="text" name="pencarian" id="pencarian" placeholder="ex. Kimi No Nawa">
+                            <button type="submit" class="cari-btn">
+                                <i class='bx bx-search-alt-2'></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="koleksi-buku">
+                <div class="left">
+                    <h3>Belum Dibaca</h3>
+                    <div id="unRead">
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>Sudah Dibaca</h3>
+                    <div id="isRead">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="assets/script/main.js"></script>
+    </body>
+    
+</html>
